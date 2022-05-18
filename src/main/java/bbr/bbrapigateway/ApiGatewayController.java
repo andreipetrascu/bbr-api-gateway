@@ -20,7 +20,13 @@ public class ApiGatewayController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String EMAIL_SERVICE = "http://localhost:7001";
+    private static final String COMPANY_SERVICE = "http://localhost:7002";
+    private static final String INVOICE_SERVICE = "http://localhost:7003";
+    private static final String DOCUMENT_SERVICE = "http://localhost:7004";
+    private static final String AUTH_SERVICE = "http://localhost:7005";
+
+    //private static final String EMAIL_SERVICE = "http://localhost:7001";
+    private static final String EMAIL_SERVICE = "http://bbr-email-service.azurewebsites.net";
     private static final String EMAIL_SERVICE_SEND_EMAIL = EMAIL_SERVICE + "/send-email";
 
     private static final Logger logger = LoggerFactory.getLogger(ApiGatewayController.class);
