@@ -1,4 +1,4 @@
-package bbr.bbrapigateway;
+package bbr.bbrapigateway.util;
 
 import lombok.*;
 

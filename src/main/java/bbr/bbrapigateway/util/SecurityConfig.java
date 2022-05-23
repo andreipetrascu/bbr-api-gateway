@@ -1,14 +1,19 @@
-package bbr.bbrapigateway;
+package bbr.bbrapigateway.util;
 
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 
+import javax.servlet.http.HttpServletResponse;
+
 import static org.springframework.web.cors.CorsConfiguration.ALL;
 
+@AllArgsConstructor
 @Configuration
 public class SecurityConfig {
 
